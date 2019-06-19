@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>goods</title><link rel=stylesheet href=http:////at.alicdn.com/t/font_1216376_mjybgx3hf1r.css><link href=./static/css/app.0b47a6862124ba0362a99a379e3fb8c1.css rel=stylesheet></head><style type=text/css>body{
+			margin: 0;
+			padding: 0;
+		}
+		#JweixinTip{
+			background: rgba(0,0,0,0.5);
+			text-align: right;
+			display: block;
+			position: fixed;
+			width: 100%;
+			z-index: 100;
+			left: 0;
+			top: 0;
+			height: 100%;
+			display: none;
+		}
+		#JweixinTip img{
+			width: 70%;
+			margin: 10px 10px 0 0;
+		}</style><body><div id=app></div><div id=JweixinTip><img src=static/images/live_weixin.png alt=""></div><script type=text/javascript src=./static/js/manifest.02a00eaf3bb57d631efc.js></script><script type=text/javascript src=./static/js/vendor.4137de29a5cc75f3cb37.js></script><script type=text/javascript src=./static/js/app.fbc466fba76199c9a814.js></script></body><script>(function (doc, win) {
+        let docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function () {
+            let clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            if (clientWidth >= 750) {
+              docEl.style.fontSize = 32 * (750 / 750) + 'px';
+            } else {
+              docEl.style.fontSize = 32 * (clientWidth / 750) + 'px';
+            }
+
+          };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);</script><script>function weixinTip(ele){
+			var ua = navigator.userAgent.toLowerCase();
+			var isWeixin = !!/MicroMessenger/i.test(ua);
+			if(isWeixin){
+				console.log('请用浏览器打开')
+				document.getElementById('JweixinTip').style.display='block';
+			}
+			else{
+				console.log('不是微信浏览器')
+				document.getElementById('JweixinTip').style.display='none';
+			}
+		}
+		window.onload=function(){
+			weixinTip()
+		}</script></html>
