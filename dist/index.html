@@ -1,50 +1,49 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>goods</title><meta name=description content="自古以来，读书都是被人广为推崇的一件事情，不论年龄和身份，大家都应该有读书的自觉。正所谓“活到老，学到老”，读书的状态应该是进行时，而非完成时，我们要一直一直从书里吸收养分，完善自我。 这里就会有个问题了，有多少人在繁忙的生活里活的仿佛只剩躯壳，走路要跑，吃饭要狼吞虎咽，就连追个剧都要二倍速。大家都说现在人的生活实在是太忙了，忙到连喘气的时间都没有，更别提读书了。 因此就有了流书这样的读书笔..."><meta content=自古以来，读书都是被人广为推崇的一件事情，不论年龄和身份，大家都应该有读书的自觉。正所谓“活到老，学到老”，读书的状态应该是进行时，而非完成时，我们要一直一直从书里吸收养分，... property=twitter:description><link rel=stylesheet href=http:////at.alicdn.com/t/font_1216376_mjybgx3hf1r.css><link href=./static/css/app.4fdca391fb8f7f2dfe8a551965378115.css rel=stylesheet></head><style type=text/css>body{
-			margin: 0;
-			padding: 0;
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>goods</title><link rel=stylesheet href=http:////at.alicdn.com/t/font_1216376_mjybgx3hf1r.css><link href=./static/css/app.0bd739cdea9db6df3d241ec8df7bd552.css rel=stylesheet></head><style type=text/css>body{
+		margin: 0;
+		padding: 0;
+	}
+	#JweixinTip{
+		background: rgba(0,0,0,0.5);
+		text-align: right;
+		display: block;
+		position: fixed;
+		width: 100%;
+		z-index: 100;
+		left: 0;
+		top: 0;
+		height: 100%;
+		display: none;
+	}
+	#JweixinTip img{
+		width: 70%;
+		margin: 10px 10px 0 0;
+	}</style><body><div id=app></div><div id=JweixinTip><img src=static/images/live_weixin.png alt=""></div><script type=text/javascript src=./static/js/manifest.45998f2fa70d5b757477.js></script><script type=text/javascript src=./static/js/vendor.1d3a6e3236537fe6b6b8.js></script><script type=text/javascript src=./static/js/app.f48f8a3ccc7fd980a6cd.js></script></body><script>(function (doc, win) {
+	let docEl = doc.documentElement,
+	resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	recalc = function () {
+	let clientWidth = docEl.clientWidth;
+	if (!clientWidth) return;
+	if (clientWidth >= 750) {
+		  docEl.style.fontSize = 32 * (750 / 750) + 'px';
+		} else {
+		  docEl.style.fontSize = 32 * (clientWidth / 750) + 'px';
 		}
-		#JweixinTip{
-			background: rgba(0,0,0,0.5);
-			text-align: right;
-			display: block;
-			position: fixed;
-			width: 100%;
-			z-index: 100;
-			left: 0;
-			top: 0;
-			height: 100%;
-			display: none;
-		}
-		#JweixinTip img{
-			width: 70%;
-			margin: 10px 10px 0 0;
-		}</style><body><div id=app></div><div id=JweixinTip><img src=static/images/live_weixin.png alt=""></div><script type=text/javascript src=./static/js/manifest.06c699d41dd77d439af8.js></script><script type=text/javascript src=./static/js/vendor.1d3a6e3236537fe6b6b8.js></script><script type=text/javascript src=./static/js/app.f48f8a3ccc7fd980a6cd.js></script></body><script>(function (doc, win) {
-        let docEl = doc.documentElement,
-          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-          recalc = function () {
-            let clientWidth = docEl.clientWidth;
-            if (!clientWidth) return;
-            if (clientWidth >= 750) {
-              docEl.style.fontSize = 32 * (750 / 750) + 'px';
-            } else {
-              docEl.style.fontSize = 32 * (clientWidth / 750) + 'px';
-            }
-
-          };
-        if (!doc.addEventListener) return;
-        win.addEventListener(resizeEvt, recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-      })(document, window);</script><script>function weixinTip(ele){
-			var ua = navigator.userAgent.toLowerCase();
-			var isWeixin = !!/MicroMessenger/i.test(ua);
-			if(isWeixin){
-				console.log('请用浏览器打开')
-				document.getElementById('JweixinTip').style.display='block';
-			}
-			else{
-				console.log('不是微信浏览器')
-				document.getElementById('JweixinTip').style.display='none';
-			}
-		}
-		window.onload=function(){
-			weixinTip()
-		}</script></html>
+	};
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);</script><script>function weixinTip(ele){
+	var ua = navigator.userAgent.toLowerCase();
+	var isWeixin = !!/MicroMessenger/i.test(ua);
+	if(isWeixin){
+		console.log('请用浏览器打开')
+		document.getElementById('JweixinTip').style.display='block';
+	}
+	else{
+		console.log('不是微信浏览器')
+		document.getElementById('JweixinTip').style.display='none';
+	}
+}
+window.onload=function(){
+	weixinTip()
+}</script></html>
